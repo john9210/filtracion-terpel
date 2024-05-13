@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filtración</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body class="animate__animated animate__fadeIn" >
+    <div class="container mt-3 mb-3 ps-0 shadow-lg">
+        <div class="row">
+            <div class="col-md-12 bg-header"></div>
+            <hr class="bg-rojo">
+        </div>
+        <div class="row bg-gris">
+            <div class="col-md-2 "></div>
+                   <!--Contenido-->
+            <div class="col-md-9 ps-md-0 ">
+              <!--Acordeón-->
+              <div class="row pt-3 texto-gris bg-gris">
+                <div class="col">
+                  <div class="accordion" id="accordionExample">     
+                  <!--Elemento 1-->
+                  <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                      <div class="ms-3 ps-1">
+                        <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                        <span class=" fs-3"><a class="texto-rojo" href="#" onclick="goTo('page1','','',''); return false;">Home</a></span>
+                      </div>
+                    </h2>
+ 
+                  </div>
+
+                    <!--Elemento 1-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">¿Qué es la IE?</span>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul class="mb-1">
+                            <li>
+                              <a class="texto-gris" href="#" onclick="goTo('tema-1-1','','',''); return false;">
+                                ¿Quién está a cargo?
+                              </a>
+                            </li>
+                            <li>
+                              <a class="texto-gris" href="#" onclick="goTo('tema-1-2','','',''); return false;">
+                                Estándares de combustible de refinería
+                              </a>
+                            </li>
+                            
+                            <li>
+                              <a class="texto-gris" href="#" onclick="goTo('tema-1-3-1','','',''); return false;">
+                                Recuerda
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 2-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">¿Qué es ASTM?</span>
+                        </button>
+                      </h2>
+                      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-2-1','','',''); return false;">¿Cual es su objetivo?</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-2-2','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 3-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">Opciones de filtración</span>
+                        </button>
+                      </h2>
+                      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-3-1','','',''); return false;">HP/deshidratador</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-3-2','','',''); return false;">Microfiltro</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-3-3','','',''); return false;">Tratador de arcilla</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-3-4-1','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 4-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 "> Procedimientos de cambio de cartucho</span>
+                        </button>
+                      </h2>
+                      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-4-1','','',''); return false;">Procedimientos de cambio de cartucho</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-4-2','','',''); return false;">Retire, limpie y pruebe los separadores con cuidado (reemplácelos si es necesario)</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-4-3','','',''); return false;">Recuerda</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-4-4','','',''); return false;">Torque adecuado</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-4-5','','',''); return false;">Evite incendios</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-4-6','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 5-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">Filtros/separadores de agua EI-1581/6elEdición</span>
+                        </button>
+                      </h2>
+                      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-5-1','','',''); return false;">Coalescente de 2” Tipo SM</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-5-2','','',''); return false;">Recipiente de filtro de 450 GPM</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-5-3','','',''); return false;">Coalescente de 2”</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-5-4','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 6-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">Monitores EI-1583/7elEdición</span>
+                        </button>
+                      </h2>
+                      <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-6-1','','',''); return false;">Documentos requeridos</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-6-2','','',''); return false;">Requisitos actuales para la alternativa Monitorear tecnologías - 57</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-6-3','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 7-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">Tecnologías de reemplazo de monitores</span>
+                        </button>
+                      </h2>
+                      <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-1','','',''); return false;">Comparación de medios de contención de agua - 59 </a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-2','','',''); return false;">Prueba de abuso severo de facetas / Comparación de prueba de Shell</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-3','','',''); return false;">Contención de agua</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-4','','',''); return false;">Vida útil del elemento</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-5','','',''); return false;">Requisitos de cambio/instalación</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-6','','',''); return false;">Recuerda</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-7','','',''); return false;">Sumidero</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-8','','',''); return false;">Pruebas de Millipore</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-10','','',''); return false;">Presión diferencial</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-11','','',''); return false;">Inspección de embarcaciones</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-12','','',''); return false;">Inspección del buque</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-7-13','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Elemento 8-->
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                          <img class="me-1 mt-2" src="img/vineta.png" alt="">
+                          <span class="texto-rojo fs-3 ">Recipientes de un solo elemento Carcasas “Vs”</span>
+                        </button>
+                      </h2>
+                      <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-0">
+                          <ul>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-8-2','','',''); return false;">Recursos</a></li>
+                            <li><a class="texto-gris" href="#" onclick="goTo('tema-8-3','','',''); return false;">Recuerda</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>                    
+
+                  </div>
+                </div>  
+              </div>
+            </div>
+        </div>
+                         <!--Paginación-->
+        <div class="row">
+          <hr class="texto-rojo">
+          <div class="col  py-2">
+            <img src="img/avion1.png" alt=""  class="ps-5">
+          </div>
+          <div class="col text-center py-4">
+              <a href="#" onclick="goTo('page3','','',''); return false;">
+                  <img class="btn-siguiente me-5" src="img/flecha-anterior.png">
+              </a>
+              <a href="#" onclick="goTo('tema-1-1','','',''); return false;">
+                  <img class="btn-siguiente" src="img/flecha-siguiente.png">
+              </a>
+          </div>
+          <div class="col py-2 text-end">
+            <img class="m-1 img-fluid" src="img/terpel.png" alt="terpel">
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/navegation.js"></script>
+</body>
+</html>

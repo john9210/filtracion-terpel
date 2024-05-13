@@ -1,0 +1,55 @@
+/* Fuentes TerpelSans */
+@font-face {
+    font-family: 'TerpelSans-black';
+    src: url('../fonts/TerpelSans-Black.eot') format('eot'),
+         url('../fonts/TerpelSans-Black.otf') format('otf'),
+         url('../fonts/TerpelSans-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TerpelSans-bold';
+    src: url('../fonts/TerpelSans-Bold.eot') format('eot'),
+         url('../fonts/TerpelSans-Bold.otf') format('otf'),
+         url('../fonts/TerpelSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TerpelSans-ExtraBold';
+    src: url('../fonts/TerpelSans-ExtraBold.eot') format('eot'),
+         url('../fonts/TerpelSans-ExtraBold.otf') format('otf'),
+         url('../fonts/TerpelSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TerpelSans-Light';
+    src: url('../fonts/TerpelSans-Light.eot') format('eot'),
+         url('../fonts/TerpelSans-Light.otf') format('otf'),
+         url('../fonts/TerpelSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TerpelSans-Medium';
+    src: url('../fonts/TerpelSans-Medium.eot') format('eot'),
+         url('../fonts/TerpelSans-Medium.otf') format('otf'),
+         url('../fonts/TerpelSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'TerpelSans-Regular';
+    src: url('../fonts/TerpelSans-Regular.eot') format('eot'),
+         url('../fonts/TerpelSans-Regular.otf') format('otf'),
+         url('../fonts/TerpelSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
