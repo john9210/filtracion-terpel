@@ -22,9 +22,10 @@
             <div>
               <span id="saludo"></span>
             </div>
-            <div class="progress-container">
-              <div class="progress-bar" id="progress">87.8</div>
-          </div>
+            <div class="progress" style="height: 30px; ">
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 87.8%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><h6 class="pt-2">87.8%</h6></div>
+            </div>
+
           <!--Elemento 1-->
             <div class="bg-gris border-0 text-center">
               <h2>
@@ -201,7 +202,8 @@
             <div class="accordion-item bg-gris border-0">
               <h2 class="accordion-header">
                 <button class="accordion-button py-1 collapsed bg-gris" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                  <span class=" texto-gris  ">Monitores EI-1583/7elEdición</span>
+                  <span class=" texto-gris  ">Recipientes de un solo elemento Carcasas “Vs”
+                  </span>
                 </button>
               </h2>
               <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -231,19 +233,19 @@
 
                 <div class="px-3">
                   <p class="texto-gris pb-5 ps-2 ms-3 ps-md-5"> 
-                    1)  Actualmente solo exterior a interior <input type="text" style="width: 170px;" id="campo10" placeholder="2” y 6”/ 5” y 8”/ 4” y 9”"> de los elementos de edición están permitidos con los siguientes procedimientos establecidos: <br>
+                    1)  Actualmente solo exterior a interior <input type="text" style="width: 190px;" id="campo10" placeholder="2” y 6”/ 5” y 8”/ 4” y 9”"> de los elementos de edición están permitidos con los siguientes procedimientos establecidos: <br>
                      
                     A) Operar con una presión diferencia 
                     <input type="text" id="campo11" placeholder="mínima/ igual/ máxima"> de 15 psi<br>
                     b) Inspección y limpieza  
-                    <input type="text"style="width: 187px;" id="campo12" placeholder="anual/ mensual/ semanal"> en las mallas de las boquillas.
+                    <input type="text"style="width: 220px;" id="campo12" placeholder="anual/ mensual/ semanal"> en las mallas de las boquillas.
   
                     
                   </p>
                   <p class="texto-gris  ps-2 ms-3 ps-md-5 px-3"> 
                     
                     2) El estándar fue retirado el      
-                <input type="text" style="width: 267px;" id="campo13" placeholder="31-12-2020/21-02-2022/21-04-2018"> 
+                <input type="text" style="width: 290px;" id="campo13" placeholder="31-12-2020/21-02-2022/21-04-2018"> 
 
                   </p>
                   <p class="texto-gris  ps-2 ms-3 ps-md-5 px-3">
@@ -251,13 +253,13 @@
                     A) Se debe aprobar el estándar
                     <input type="text" style="width: 443px;" id="campo14"  placeholder=" (1588,1599,15XX) / (1728,11996,14XX) / (1581, 1595,16XX)">  <br>
                     B) Programa de Evaluación de Robustez
-                    <input type="text" style="width: 275px;" id="campo15" placeholder="comportamiento / Robustez / calidad"> 
+                    <input type="text" style="width: 320px;" id="campo15" placeholder="comportamiento / Robustez / calidad"> 
                     y en la aeronave. <br>
                     C) Medición de carga electrostática
-                    <input type="text" style="width: 262px;" id="campo16" placeholder="energética / acuática /electrostática"> 
+                    <input type="text" style="width: 320px;" id="campo16" placeholder="energética / acuática /electrostática"> 
                     <br>
                     D) Pruebas de campo
-                    <input type="text" style="width: 200px;" id="campo17" placeholder="filtros / campo / monitoreo"> 
+                    <input type="text" style="width: 250px;" id="campo17" placeholder="filtros / campo / monitoreo"> 
                     
                   </p>
                   <div class="pt-5 ps-5 ms-2">
@@ -293,33 +295,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/navegation.js"></script>
     <script src="js/actividades.js"></script>
-    <script src="js/progreso.js"></script>
+
     <script src="js/saludo.js"></script>
     <script>
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
+
       // Obtener los parámetros de la URL
       const params = new URLSearchParams(window.location.search);
   

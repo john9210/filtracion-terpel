@@ -22,9 +22,10 @@
             <div>
               <span id="saludo"></span>
             </div>
-            <div class="progress-container">
-              <div class="progress-bar" id="progress">33.5%</div>
-          </div>
+            <div class="progress" style="height: 30px; ">
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 33.5%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><h6 class="pt-2">33.5%</h6></div>
+            </div>
+
           <!--Elemento 1-->
             <div class="bg-gris border-0 text-center">
               <h2>
@@ -119,7 +120,7 @@
                   <ul class="mb-0">
                     <li><a class="texto-gris" href="#" onclick="goTo('tema-4-1','','',''); return false;">Procedimientos de cambio de cartucho</a></li>
                     <li class="fw-bold"><a class="texto-gris" href="#" onclick="goTo('tema-4-2','','',''); return false;">Retire, limpie y pruebe los separadores con cuidado (reemplácelos si es necesario)</a></li>
-                    <li><a class="texto-gris" href="#" onclick="goTo('tema-4-3','','',''); return false;">Recuerda</a></li>
+
                     <li><a class="texto-gris" href="#" onclick="goTo('tema-4-4','','',''); return false;">Torque adecuado</a></li>
                     <li><a class="texto-gris" href="#" onclick="goTo('tema-4-5','','',''); return false;">Evite incendios</a></li>
                     <li><a class="texto-gris" href="#" onclick="goTo('tema-4-6','','',''); return false;">Recuerda</a></li>
@@ -200,7 +201,7 @@
             <div class="accordion-item bg-gris border-0">
               <h2 class="accordion-header">
                 <button class="accordion-button py-1 collapsed bg-gris" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                  <span class=" texto-gris">Monitores EI-1583/7elEdición</span>
+                  <span class=" texto-gris">Recipientes de un solo elemento Carcasas “Vs”</span>
                 </button>
               </h2>
               <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -259,7 +260,7 @@
                 <a href="#" onclick="goTo('tema-4-1','','',''); return false;">
                     <img class="btn-siguiente me-5" src="img/flecha-anterior.png">
                 </a>
-                <a href="#" onclick="goTo('tema-4-3','','',''); return false; ">
+                <a href="#" onclick="goTo('tema-4-4','','',''); return false; ">
                     <img class="btn-siguiente" src="img/flecha-siguiente.png">
                 </a>
                 
@@ -275,22 +276,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/navegation.js"></script>
     <script src="js/actividades.js"></script>
-    <script src="js/progreso.js"></script>
     <script src="js/saludo.js"></script>
     <script>
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
-      updateProgressBar();
+
       
       // Obtener los parámetros de la URL
       const params = new URLSearchParams(window.location.search);

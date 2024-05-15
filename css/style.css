@@ -74,4 +74,7 @@ th{ background-color: #ff1802 !important; color: #fff !important; }
   margin-left: 35%;
 }
 
+.fw-bold {
+  font-family: TerpelSans-black;
+}
 
