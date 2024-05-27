@@ -31,55 +31,69 @@ function allowDrop(event) {
 // funsion de respuetas tema 3-4-1
 
 
-var contadorIntentos = 2; // Inicializa el contador de intentos en 0
+var contadorIntentos = 2; // Inicializa el contador de intentos en 2
 
 // Define las preguntas y respuestas en un objeto
 const preguntasYRespuestas = [
-    { pregunta: "Pregunta 1", respuesta: 4 },
-    { pregunta: "Pregunta 2", respuesta: 1 },
-    { pregunta: "Pregunta 3", respuesta: 3 },
-    { pregunta: "Pregunta 4", respuesta: 1 },
-    // Agrega más preguntas y respuestas aquí
+  { pregunta: "Pregunta1", respuesta: 4 },
+  { pregunta: "Pregunta2", respuesta: 1 },
+  { pregunta: "Pregunta3", respuesta: 3 },
+  { pregunta: "Pregunta4", respuesta: 1 },
+  // Agrega más preguntas y respuestas aquí
 ];
 
 $(document).ready(function () {
-    $("#typicalday").submit(function (event) {
-        event.preventDefault();
+  $("#typicalday").submit(function (event) {
+    event.preventDefault();
 
-        const $selects = $("select[name^='survey-']");
+    const $selects = $("select[name^='survey-']");
 
-        const resultados = preguntasYRespuestas.map((pregunta, index) => {
-            const $select = $selects.eq(index);
-            $select.removeClass("is-invalid is-valid");
-            const userAnswer = parseInt($select.val());
-            const correcta = userAnswer === pregunta.respuesta;
-            $select.addClass(correcta ? "is-valid" : "is-invalid");
-            return { pregunta: pregunta.pregunta, correcta };
-        });
-
-        contadorIntentos++;
-
-        $('#correct, #fail, #Contador').show();
-        $('#Contador').text('Intentos: ' + contadorIntentos);
-
-        const respuestasCorrectas = resultados.filter(result => result.correcta).length;
-        $('#correct').text('Correctas: ' + respuestasCorrectas);
-        $('#fail').text('Incorrectas: ' + (preguntasYRespuestas.length - respuestasCorrectas));
-
-        // Mostrar un mensaje de resultado para cada pregunta
-        resultados.forEach((result, index) => {
-            const mensaje = result.correcta ? 'Correcto' : 'Falla';
-            const $mensajeDiv = $('<div>').addClass(result.correcta ? 'text-success' : 'text-danger').text(`Pregunta ${index + 1}: ${mensaje}`);
-            $('#resultados').append($mensajeDiv);
-        });
+    const resultados = preguntasYRespuestas.map((pregunta, index) => {
+      const $select = $selects.eq(index);
+      $select.removeClass("is-invalid is-valid");
+      const userAnswer = parseInt($select.val());
+      const correcta = userAnswer === pregunta.respuesta;
+      $select.addClass(correcta ? "is-valid" : "is-invalid");
+      return { pregunta: pregunta.pregunta, correcta };
     });
+
+    contadorIntentos++;
+
+    $('#correct, #fail, #Contador').show();
+    $('#Contador').text('Intentos: ' + contadorIntentos);
+
+    const respuestasCorrectas = resultados.filter(result => result.correcta).length;
+    $('#correct').text('Correctas: ' + respuestasCorrectas);
+    $('#fail').text('Incorrectas: ' + (preguntasYRespuestas.length - respuestasCorrectas));
+
+    // Mostrar un mensaje de resultado para cada pregunta
+    resultados.forEach((result, index) => {
+      const mensaje = result.correcta ? 'Correcto' : 'Incorrecto';
+      const $mensajeDiv = $('<div>').addClass(result.correcta ? 'text-success' : 'text-danger')
+        .text(`Pregunta ${index + 1}: ${mensaje}`);
+      $('#resultados').append($mensajeDiv);
+    });
+
+    // Validación adicional (opcional)
+    if (respuestasCorrectas < preguntasYRespuestas.length) {
+      alert('¡No has respondido todas las preguntas correctamente! Revisa las respuestas incorrectas y vuelve a intentarlo.');
+      return;
+    }
+
+    // Almacenar resultados (opcional)
+    const resultadosAlmacenados = JSON.parse(localStorage.getItem('resultados') || '[]');
+    resultadosAlmacenados.push({ intentos: contadorIntentos, respuestasCorrectas });
+    localStorage.setItem('resultados', JSON.stringify(resultadosAlmacenados));
+
+    // Mostrar mensaje de éxito (opcional)
+    alert('¡Felicidades! Has completado la prueba correctamente.');
+  });
 });
 
 
 
     
-    // Uncomment this line if you want to display the solution element
-    // $("#solutiontypicalday").css("display", "block");
+
 
 // Actividad 2.2 respuestas correctas 
 
